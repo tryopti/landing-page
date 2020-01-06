@@ -1,12 +1,36 @@
 h2 {
   font: red;
 }
+.step2 {
+  margin-top: 60px;
+  border-top: 1px solid
+    padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
 .step2img {
   width: 46%;
   margin-left: 4%;
 }
 .step2img img {
-  width: 5%;
+  width: 50%;
   height: auto;
   border-radius: 10px;
+}
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v19/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'), url(https://fonts.gstatic.com/s/notosansjp/v24/-F62fjtqLzI2JPCgQBnw7HFYwQgM.otf) format('opentype');
+}
+p {
+  color: red;
 }
