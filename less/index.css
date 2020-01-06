@@ -1,40 +1,12 @@
-.step2 {
-    margin-top: 60px;
-    border-top: 1px solid #dee2e6;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+h2 {
+  font: red;
 }
-.step2 .step2text {
-    width: 50%;
+.step2img {
+  width: 46%;
+  margin-left: 4%;
 }
-.step2 .step2text h3 {
-    margin-bottom: 10px;
-}
-.home .walk .walk-text p {
-    margin-bottom: 26px;
-}
-.home .walk .walk-text .btn {
-    background-color: #23293b;
-    width: 50%;
-    font-size: 2rem;
-    color: #f6f7f8;
-    height: 15%;
-    border-radius: 5%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.home .walk .walk-text .btn:hover {
-    background-color: #f6f7f8;
-    color: #23293b;
-}
-.home .walk .walk-img {
-    width: 46%;
-    margin-left: 4%;
-}
-.home .walk .walk-img img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.step2img img {
+  width: 5%;
+  height: auto;
+  border-radius: 10px;
 }
