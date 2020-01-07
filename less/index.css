@@ -34,25 +34,6 @@ nav a:hover {
   animation-name: bounce;
   animation-duration: 1s;
 }
-.navbottom {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-.navbottom a {
-  font-size: 2.8rem;
-  padding: 12px 24px;
-  margin: 8px;
-  text-decoration: none;
-  background-color: #b5d6b2;
-  border-radius: 6px;
-  color: white;
-  display: block;
-}
-.navbottom a:hover {
-  background-color: #d9ffd6;
-  color: black;
-}
 .intro {
   text-align: center;
   max-width: 1000px;
@@ -85,10 +66,30 @@ nav a:hover {
   height: auto;
   max-width: 360px;
   border-radius: 6px;
+  box-shadow: 3px 5px #f3f0f0;
 }
 .step2text {
   text-align: right;
   width: 30%;
+}
+.navbottom {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.navbottom a {
+  font-size: 2.8rem;
+  padding: 12px 24px;
+  margin: 8px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #d0e0eb 0%, #88abc2 45%, #49708a 85%);
+  border-radius: 6px;
+  color: white;
+  display: block;
+}
+.navbottom a:hover {
+  background: linear-gradient(90deg, #88abc2 0%, #49708a 70%, #d9ffd6 98%);
+  color: black;
 }
 footer {
   text-align: center;
