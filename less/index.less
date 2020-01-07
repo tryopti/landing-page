@@ -12,44 +12,198 @@ h1 {
     text-align: center;
 }
 
-.step1 {
-    margin-top: 60px;
-    // border-top: 1px solid;
+//
+//
+// Beginning of Marketing Page
+//
+//
+nav {
+    text-align: right;
+    transform: translateY(-40px);
+    padding-right: 10px;
+
+    a {
+        color: white;
+        padding: 10px;
+
+        &:hover {
+            animation-name: bounce;
+            animation-duration: 1s;
+        }
+    }
+}
+
+.navbottom {
+    text-align: center;
+    a {
+        font-size: 2.8rem;
+        padding: 12px 24px;
+        margin: 8px;
+        text-decoration: none;
+        background-color: #b5d6b2;
+        border-radius: 6px;
+        color: white;
+
+        &:hover {
+            background-color: #d9ffd6;
+            color: black;
+        }
+    }
+}
+
+.stepscontainer {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.step1,
+.step2 {
     padding: 50px 60px;
     display: flex;
     justify-content: center;
 }
 
-.step1img {
-    width: 46%;
-    margin-left: 4%;
+.step1 {
+    margin-top: 60px;
+    // border-top: 1px solid;
+}
+.step1text {
+    width: 30%;
+}
+
+.step1img,
+.step2img {
+    margin-right: 4%;
+    text-align: right;
 
     img {
         width: 90%;
         height: auto;
-        border-radius: 5px;
+        max-width: 360px;
+        border-radius: 6px;
     }
-}
-
-.step2 {
-    // margin-top: 60px;
-    // border-top: 1px solid;
-    padding: 50px 60px;
-    display: flex;
-    justify-content: center;
 }
 
 .step2text {
     text-align: right;
+    width: 30%;
 }
 
-.step2img {
-    width: 46%;
-    margin-left: 4%;
+//
+// End of Marketing Page
+//
+// Beginning of About Page
+//
+//
 
-    img {
-        width: 90%;
-        height: auto;
-        border-radius: 5px;
+.tomas {
+    align-items: center;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        width: 20%;
+        margin: 10px 5px;
+        // margin-bottom: 20%;
     }
+}
+
+//
+//
+// animations
+
+@-webkit-keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%,
+    43% {
+        -webkit-animation-timing-function: cubic-bezier(
+            0.755,
+            0.05,
+            0.855,
+            0.06
+        );
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+    }
+
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(
+            0.755,
+            0.05,
+            0.855,
+            0.06
+        );
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+@keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%,
+    43% {
+        -webkit-animation-timing-function: cubic-bezier(
+            0.755,
+            0.05,
+            0.855,
+            0.06
+        );
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+    }
+
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(
+            0.755,
+            0.05,
+            0.855,
+            0.06
+        );
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
 }
