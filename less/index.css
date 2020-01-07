@@ -1,22 +1,3 @@
-h2 {
-  font: red;
-}
-.step2 {
-  margin-top: 60px;
-  border-top: 1px solid
-    padding: 50px 60px;
-  display: flex;
-  justify-content: center;
-}
-.step2img {
-  width: 46%;
-  margin-left: 4%;
-}
-.step2img img {
-  width: 50%;
-  height: auto;
-  border-radius: 10px;
-}
 @font-face {
   font-family: 'Muli';
   font-style: normal;
@@ -31,6 +12,44 @@ h2 {
   font-display: swap;
   src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'), url(https://fonts.gstatic.com/s/notosansjp/v24/-F62fjtqLzI2JPCgQBnw7HFYwQgM.otf) format('opentype');
 }
-p {
-  color: red;
+body {
+  font-family: Muli, sans-serif;
+}
+img {
+  max-width: 100%;
+}
+h1 {
+  text-align: center;
+}
+.step1 {
+  margin-top: 60px;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.step1img {
+  width: 46%;
+  margin-left: 4%;
+}
+.step1img img {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+}
+.step2 {
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+.step2text {
+  text-align: right;
+}
+.step2img {
+  width: 46%;
+  margin-left: 4%;
+}
+.step2img img {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
 }
