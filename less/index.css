@@ -1,3 +1,4 @@
+@import url('../normalize.css');
 @font-face {
   font-family: 'Muli';
   font-style: normal;
@@ -36,8 +37,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  animation-name: bounce;
-  animation-duration: 1s;
+  text-shadow: 2px 2px 8px black;
 }
 .intro {
   text-align: center;
@@ -71,7 +71,7 @@ nav a:hover {
   height: auto;
   max-width: 360px;
   border-radius: 6px;
-  box-shadow: 3px 5px #f3f0f0;
+  box-shadow: 3px 5px 10px #cccccc;
 }
 .step2text {
   text-align: right;
@@ -87,13 +87,16 @@ nav a:hover {
   padding: 12px 24px;
   margin: 8px;
   text-decoration: none;
-  background: linear-gradient(90deg, #d0e0eb 0%, #88abc2 45%, #49708a 85%);
+  background: linear-gradient(90deg, #d0e0eb 0%, #88abc2 45%, #49708a 100%);
   border-radius: 6px;
   color: white;
   display: block;
+  transition: transform 0.4s;
+  transform: translateY(0px);
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .navbottom a:hover {
-  background: linear-gradient(90deg, #88abc2 0%, #49708a 70%, #d9ffd6 98%);
+  transform: translateY(-4px);
   color: black;
 }
 footer {
@@ -109,7 +112,7 @@ footer {
 .tomas img {
   width: 20%;
   border-radius: 6px;
-  box-shadow: 3px 5px #f3f0f0;
+  box-shadow: 3px 5px 10px #cccccc;
 }
 .team {
   display: flex;
@@ -123,69 +126,5 @@ footer {
 .team img {
   width: 80%;
   border-radius: 6px;
-  box-shadow: 3px 5px #f3f0f0;
-}
-@-webkit-keyframes bounce {
-  from,
-  20%,
-  53%,
-  80%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  40%,
-  43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
-  }
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
-  }
-  90% {
-    -webkit-transform: translate3d(0, -4px, 0);
-    transform: translate3d(0, -4px, 0);
-  }
-}
-@keyframes bounce {
-  from,
-  20%,
-  53%,
-  80%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  40%,
-  43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
-  }
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
-  }
-  90% {
-    -webkit-transform: translate3d(0, -4px, 0);
-    transform: translate3d(0, -4px, 0);
-  }
-}
-.bounce {
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-transform-origin: center bottom;
-  transform-origin: center bottom;
+  box-shadow: 3px 5px 10px #cccccc;
 }
