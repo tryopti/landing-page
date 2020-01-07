@@ -21,6 +21,10 @@ img {
 h1 {
   text-align: center;
 }
+h2,
+h3 {
+  margin: 5px;
+}
 nav {
   text-align: right;
   transform: translateY(-40px);
@@ -94,16 +98,31 @@ nav a:hover {
 footer {
   text-align: center;
 }
+.team-container {
+  text-align: center;
+}
 .tomas {
-  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+.tomas img {
+  width: 20%;
+  border-radius: 6px;
+  box-shadow: 3px 5px #f3f0f0;
 }
 .team {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .team div {
   width: 20%;
-  margin: 10px 5px;
+  margin: 20px 20px;
+}
+.team img {
+  width: 80%;
+  border-radius: 6px;
+  box-shadow: 3px 5px #f3f0f0;
 }
 @-webkit-keyframes bounce {
   from,
