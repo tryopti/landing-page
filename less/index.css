@@ -33,6 +33,7 @@ nav {
 nav a {
   color: white;
   padding: 10px;
+  text-decoration: none;
 }
 nav a:hover {
   animation-name: bounce;
@@ -43,6 +44,9 @@ nav a:hover {
   max-width: 1000px;
   margin: 0 auto;
 }
+.intro p {
+  text-align: left;
+}
 .stepscontainer {
   max-width: 80%;
   margin: 0 auto;
@@ -52,9 +56,6 @@ nav a:hover {
   padding: 50px 60px;
   display: flex;
   justify-content: center;
-}
-.step1 {
-  margin-top: 60px;
 }
 .step1text {
   width: 30%;
