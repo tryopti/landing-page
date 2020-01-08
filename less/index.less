@@ -167,7 +167,7 @@ footer {
 
     div {
         width: 20%;
-        margin: 20px;
+        margin: 40px 30px;
     }
     img {
         width: 70%;
@@ -177,9 +177,15 @@ footer {
     }
 
     p {
-        text-align: left;
+        text-align: center;
     }
 }
+
+//
+//
+// Phone
+//
+//
 
 @media @phone {
     .nav a {
@@ -194,7 +200,6 @@ footer {
     }
     .step1,
     .step2 {
-        display: flex;
         flex-direction: column;
         transform: translateX(-35px);
 
@@ -203,7 +208,6 @@ footer {
             width: 120%;
             text-align: left;
             margin-top: 5%;
-            // padding: 8px;
         }
 
         img {
@@ -217,5 +221,31 @@ footer {
 
     .step2 {
         margin-bottom: -10%;
+    }
+
+    //
+    //
+    // Phone - About Page
+    //
+    //
+
+    .team div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tomas {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .tomasText {
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        p {
+            text-align: left;
+        }
     }
 }
