@@ -113,17 +113,17 @@ footer {
   text-align: center;
 }
 .tomas {
+  padding: 60px 80px;
   display: flex;
   justify-content: center;
-  border-radius: 6px;
-  box-shadow: 2px 2px 8px black;
 }
 .tomas .tomasText {
-  width: 30%;
-  margin: 20px;
+  margin: 20px 20px;
 }
 .tomas img {
   width: 20%;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px black;
 }
 .team {
   display: flex;
@@ -134,10 +134,13 @@ footer {
 .team div {
   width: 20%;
   margin: 20px 20px;
+}
+.team img {
+  width: 70%;
+  margin-top: 10px;
   box-shadow: 2px 2px 8px black;
   border-radius: 6px;
 }
-.team img {
-  width: 60%;
-  margin-top: 10px;
+.team p {
+  text-align: left;
 }
