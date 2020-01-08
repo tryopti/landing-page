@@ -13,6 +13,9 @@
   font-display: swap;
   src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'), url(https://fonts.gstatic.com/s/notosansjp/v24/-F62fjtqLzI2JPCgQBnw7HFYwQgM.otf) format('opentype');
 }
+.border-radius {
+  border-radius: 6px;
+}
 body {
   font-family: Muli, sans-serif;
 }
@@ -38,6 +41,13 @@ nav a {
 }
 nav a:hover {
   text-shadow: 2px 2px 8px black;
+}
+.logo {
+  background-color: white;
+  border-radius: 50%;
+  display: block;
+  margin: -90px auto 0;
+  width: 100px;
 }
 .intro {
   text-align: center;
@@ -70,8 +80,8 @@ nav a:hover {
   width: 90%;
   height: auto;
   max-width: 360px;
+  box-shadow: 2px 2px 8px black;
   border-radius: 6px;
-  box-shadow: 3px 5px 10px #cccccc;
 }
 .step2text {
   text-align: right;
@@ -112,7 +122,7 @@ footer {
 .tomas img {
   width: 20%;
   border-radius: 6px;
-  box-shadow: 3px 5px 10px #cccccc;
+  box-shadow: 2px 2px 8px black;
 }
 .team {
   display: flex;
@@ -126,5 +136,5 @@ footer {
 .team img {
   width: 80%;
   border-radius: 6px;
-  box-shadow: 3px 5px 10px #cccccc;
+  box-shadow: 2px 2px 8px black;
 }
