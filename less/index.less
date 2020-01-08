@@ -6,6 +6,8 @@
     border-radius: 6px;
 }
 
+@phone: ~'(max-width: 500px)';
+
 body {
     font-family: Muli, sans-serif;
 }
@@ -101,6 +103,7 @@ nav {
     text-align: center;
     display: flex;
     justify-content: center;
+
     a {
         font-size: 2.8rem;
         padding: 12px 24px;
@@ -146,7 +149,7 @@ footer {
 
     .tomasText {
         //     width: 30%;
-        margin: 20px 20px;
+        margin: 20px;
     }
 
     img {
@@ -164,7 +167,7 @@ footer {
 
     div {
         width: 20%;
-        margin: 20px 20px;
+        margin: 20px;
     }
     img {
         width: 70%;
@@ -175,5 +178,44 @@ footer {
 
     p {
         text-align: left;
+    }
+}
+
+@media @phone {
+    .nav a {
+        color: #49708a;
+    }
+
+    .intro {
+        width: 90%;
+    }
+    .stepscontainer {
+        width: 100%;
+    }
+    .step1,
+    .step2 {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(-35px);
+
+        .step1text,
+        .step2text {
+            width: 120%;
+            text-align: left;
+            margin-top: 5%;
+            // padding: 8px;
+        }
+
+        img {
+            width: 120%;
+        }
+        .step2img {
+            order: -1;
+            margin-top: -20%;
+        }
+    }
+
+    .step2 {
+        margin-bottom: -10%;
     }
 }

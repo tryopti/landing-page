@@ -118,7 +118,7 @@ footer {
   justify-content: center;
 }
 .tomas .tomasText {
-  margin: 20px 20px;
+  margin: 20px;
 }
 .tomas img {
   width: 20%;
@@ -133,7 +133,7 @@ footer {
 }
 .team div {
   width: 20%;
-  margin: 20px 20px;
+  margin: 20px;
 }
 .team img {
   width: 70%;
@@ -143,4 +143,41 @@ footer {
 }
 .team p {
   text-align: left;
+}
+@media (max-width: 500px) {
+  .nav a {
+    color: #49708a;
+  }
+  .intro {
+    width: 90%;
+  }
+  .stepscontainer {
+    width: 100%;
+  }
+  .step1,
+  .step2 {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-35px);
+  }
+  .step1 .step1text,
+  .step2 .step1text,
+  .step1 .step2text,
+  .step2 .step2text {
+    width: 120%;
+    text-align: left;
+    margin-top: 5%;
+  }
+  .step1 img,
+  .step2 img {
+    width: 120%;
+  }
+  .step1 .step2img,
+  .step2 .step2img {
+    order: -1;
+    margin-top: -20%;
+  }
+  .step2 {
+    margin-bottom: -10%;
+  }
 }
