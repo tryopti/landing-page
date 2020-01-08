@@ -113,8 +113,8 @@ footer {
   text-align: center;
 }
 .tomas {
-  padding: 60px 80px;
   display: flex;
+  margin: 50px;
   justify-content: center;
 }
 .tomas .tomasText {
