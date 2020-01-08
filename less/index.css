@@ -97,7 +97,7 @@ nav a:hover {
   padding: 12px 24px;
   margin: 8px;
   text-decoration: none;
-  background: linear-gradient(90deg, #d0e0eb 0%, #88abc2 45%, #49708a 100%);
+  background: linear-gradient(90deg, #88abc2 0%, #49708a 45%, #b5d6b2 100%);
   border-radius: 6px;
   color: white;
   display: block;
@@ -112,29 +112,32 @@ nav a:hover {
 footer {
   text-align: center;
 }
-.team-container {
-  text-align: center;
-}
 .tomas {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px black;
+}
+.tomas .tomasText {
+  width: 30%;
   margin: 20px;
 }
 .tomas img {
   width: 20%;
-  border-radius: 6px;
-  box-shadow: 2px 2px 8px black;
 }
 .team {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
 }
 .team div {
   width: 20%;
   margin: 20px 20px;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 6px;
 }
 .team img {
-  width: 80%;
-  border-radius: 6px;
-  box-shadow: 2px 2px 8px black;
+  width: 60%;
+  margin-top: 10px;
 }
