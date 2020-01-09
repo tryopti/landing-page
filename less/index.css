@@ -131,6 +131,12 @@ footer {
 .team p {
   text-align: center;
 }
+.team i {
+  color: #49708a;
+}
+.team a {
+  text-decoration: none;
+}
 @media (max-width: 500px) {
   .nav a {
     color: #49708a;
